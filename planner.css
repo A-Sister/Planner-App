@@ -1,0 +1,71 @@
+#logout_div {
+    text-align: right; 
+    margin-right: 50px;
+  }
+  
+  #roomName{
+      width:100%;
+      margin-right: 500px;
+  }
+
+  .room_name {
+      color:white;
+  }
+  
+  #addRoom{
+      width: 50%;
+  }
+  
+  #Fitoutput, #Dayoutput
+  {
+      padding: 10px; width:100%;background: rgba(255,255,255,0.8);border-radius: 15px;
+  }
+  
+  .split {
+      height: 100%;
+      width: 50%;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      overflow-x: hidden;
+      padding-top: 20px;
+    }
+    
+    .left {
+      left: 0;
+      background-color: white;
+      font-family: monospace;
+      color: black;
+    }
+    
+    .right {
+      right: 0;
+      background-color: purple;
+      color: white;
+      font-family: monospace;
+    }
+    
+    .centered {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+    
+    .centered img {
+      width: 150px;
+      border-radius: 50%;
+    }
+
+    .day {
+        padding-left: 250px;
+    }
+
+    .fit {
+        padding-right: 250px;
+    }
+
+    .plan {
+        padding-bottom: 250px;
+    }

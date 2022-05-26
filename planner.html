@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>Weekly Planner</title>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="planner.css">
+        <script src = "planner.js"></script>
+    </head>
+    <body>
+        <div class="split left">
+            <div id="logout_div">
+                <button id="logout" onclick="logout()" class="btn btn-danger">Logout</button>
+            </div>
+           <div class="centered">
+            <h1>Creat a Planner</h1>
+            <br>
+            <label>Create a Daily Planner:</label>
+            <input type="text" placeholder="Create Daily Planner" id="roomName" class="form-control">
+            <br>
+            <button id="addRoom" onclick="addDailyPlanner()" class="btn btn-success">Add Planner</button>
+            <br>
+            <br>
+            <br>
+            <br>
+            <label>Create a Fitness Planner:</label>
+            <input type="text" placeholder="Create Fitness Planner" id="roomName2" class="form-control">
+            <br>
+            <button id="addRoom" onclick="addFitnessPlanner()" class="btn btn-success">Add Planner</button>
+          </div>
+       </div>
+    
+        <div class="split right">
+            <div class="centered plan">
+            <h1>Weekly Planners</h1>
+        </div>
+            <span>
+                <div class="centered fit">
+                    <h3 class="color_white">FITNESS PLANNERS</h3>
+                    <div id="Fitoutput"></div>
+                </div>
+                <div class="centered day">
+                    <h3 class="color_white">DAILY PLANNERS</h3>
+                    <div id="Dayoutput"></div>
+                </div>
+            </span>
+       </div>
+    </body>
+    </html>

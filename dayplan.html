@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>Weekly Planner</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="dayplan.css">
+        <script src = "dayplan.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div class="split left">
+            <div class="centered">
+              <h2>To Do:</h2>
+              <div>
+              <span>
+                  <label>1.</label>
+                  <input type="text" id="todo1" class="form-control" placeholder="Things to Do" style="width:180%;">
+              </span>
+              <span>
+                <label>2.</label>
+                <input type="text" id="todo2" class="form-control" placeholder="Things to Do" style="width:180%;">
+            </span>
+            <span>
+                <label>3.</label>
+                <input type="text" id="todo3" class="form-control" placeholder="Things to Do" style="width:180%;">
+            </span>
+            <span>
+                <label>4.</label>
+                <input type="text" id="todo4" class="form-control" placeholder="Things to Do" style="width:180%;">
+            </span>
+            <span>
+                <label>5.</label>
+                <input type="text" id="todo5" class="form-control" placeholder="Things to Do" style="width:180%;">
+                </span>
+            </div>
+          </div>
+          
+          <div class="split right">
+              <div>
+                <span>
+              <button id="delete_button" class="btn btn-danger" onclick="deletePlanner()" style="margin-left:300px; width:30%;">Delete Planner</button>
+              <button id="goback_button" class="btn btn-info" onclick="goBack()" style="margin-left:300px; width:30%;">Go Back</button>
+            </span>
+            <h2 id="planner_name"></h2>
+            </div>
+          </div>
+    </body>
+</html>
